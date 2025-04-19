@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to BSC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to BSC</h1>
+        <div class="prize-marquee">First Prize: Car | Second Prize: Bike | Third Prize: 1 Lakh PKR Cash (After 50,000 Orders)</div>
+        <div class="top-bar">
+            <div class="coins">Coins: <span id="coinCount">0</span></div>
+            <div class="deposit">Deposit</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="ads-section">
+            <button onclick="watchAd()">Watch Ad & Earn</button>
+            <p id="adsLeft">Ads left today: <span id="adsRemaining">5</span></p>
+            <p id="timerMsg"></p>
+        </div>
+
+        <div class="products">
+            <div class="product">
+                <img src="earpod.jpg" alt="Earpod">
+                <h3>Earpod</h3>
+                <p>Price: 1999 PKR</p>
+                <button onclick="buyProduct(1999)">Buy</button>
+            </div>
+            <div class="product">
+                <img src="watch.jpg" alt="Watch">
+                <h3>Watch</h3>
+                <p>Price: 1499 PKR</p>
+                <button onclick="buyProduct(1499)">Buy</button>
+            </div>
+        </div>
+
+        <div class="withdraw">
+            <button onclick="withdraw()">Request Withdraw</button>
+            <p id="withdrawMsg"></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
